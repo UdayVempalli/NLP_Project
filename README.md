@@ -1,71 +1,58 @@
 # Spam Detection Using Advanced NLP Techniques
-Introduction
+
+## Introduction
+
 This project focuses on detecting spam in email using advanced Natural Language Processing (NLP) techniques. The dataset used is an augmented version of the Enron public email corpus, specifically curated for spam detection purposes.
-Dataset
 
-Source: Athens University of Economics and Business (AUEB)
-Composition:
+## Dataset
 
-3,672 regular (ham) emails
-1,500 spam emails
+- Source: Athens University of Economics and Business (AUEB)
+- Composition:
+  - 3,672 regular (ham) emails
+  - 1,500 spam emails
 
+## Methodology
 
-
-Methodology
 The project employs various NLP techniques and machine learning models to classify emails as spam or ham:
 
-Text Processing and Tokenization
+### Text Processing and Tokenization
 
-Utilized NLTK for tokenization and text preprocessing
-Implemented frequency distribution analysis
+- Utilized NLTK for tokenization and text preprocessing
+- Implemented frequency distribution analysis
 
+### Feature Engineering
 
-Feature Engineering
+- Bag-of-Words (BOW) / Unigram baseline approach
+- Stopwords filtering
+- Bigram features
+- Part-of-Speech (POS) tagging features
 
-Bag-of-Words (BOW) / Unigram baseline approach
-Stopwords filtering
-Bigram features
-Part-of-Speech (POS) tagging features
+### Machine Learning Models
 
+- Naive Bayes Classifier
+- Support Vector Machines (SVM)
+  - SVC (Support Vector Classification)
+  - LinearSVC
+  - NuSVC
 
-Machine Learning Models
+### Evaluation Techniques
 
-Naive Bayes Classifier
-Support Vector Machines (SVM)
+- Cross-validation
+- Precision, Recall, and F1 Score calculation
 
-SVC (Support Vector Classification)
-LinearSVC
-NuSVC
+## Results
 
+- Naive Bayes Classifier with POS features achieved 95% accuracy
+- LinearSVC model outperformed others with 96% accuracy
 
+## Key Findings
 
+- POS-tagged features consistently provided higher accuracy across different models
+- Bigram features improved performance over unigram features
+- LinearSVC proved to be the most effective model for this dataset
 
-Evaluation Techniques
+## Future Work
 
-Cross-validation
-Precision, Recall, and F1 Score calculation
-
-
-
-Results
-
-Naive Bayes Classifier with POS features achieved 95% accuracy
-LinearSVC model outperformed others with 96% accuracy
-
-Key Findings
-
-POS-tagged features consistently provided higher accuracy across different models
-Bigram features improved performance over unigram features
-LinearSVC proved to be the most effective model for this dataset
-
-Future Work
-
-Experiment with more advanced NLP techniques (e.g., word embeddings, deep learning models)
-Explore ensemble methods to potentially improve accuracy further
-Investigate the impact of different preprocessing techniques on model performance
-
-Requirements
-
-Python 3.x
-NLTK
-scikit-learn
+- Experiment with more advanced NLP techniques (e.g., word embeddings, deep learning models)
+- Explore ensemble methods to potentially improve accuracy further
+- Investigate the impact of different preprocessing techniques on model performance
